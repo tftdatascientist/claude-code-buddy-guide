@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://claude-code-buddy.netlify.app/sitemap.xml

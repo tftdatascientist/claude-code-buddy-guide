@@ -1,0 +1,28 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\Sławek\\Documents\\.MD\\PARA\\SER\\10_PROJEKTY\\SIDE_WWW\\CCB\\site\\dist"
+publishOrigin = "ui"
+commandOrigin = "ui"
+base = "C:\\Users\\Sławek\\Documents\\.MD\\PARA\\SER\\10_PROJEKTY\\SIDE_WWW\\CCB\\site"
+command = "npm run build"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

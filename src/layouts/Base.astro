@@ -1,0 +1,44 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Claude Code /buddy — Kompletny Przewodnik',
+  description = 'Kompletny przewodnik po /buddy — wirtualnym zwierzaku w Claude Code. Historia, 18 gatunków, architektura, komendy i Easter Eggs.',
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <link rel="canonical" href="https://claude-code-buddy.netlify.app/" />
+
+  <!-- OG -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <slot />
+</body>
+</html>
